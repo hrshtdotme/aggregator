@@ -21,6 +21,8 @@ pnpm dev
 - **Frontend:** http://localhost:3000
 - **Server:** http://localhost:3001
 
+> **Cold start:** On first launch the server fetches all active markets from Polymarket (~7k) and Kalshi (~6k) in parallel. This takes **~5-10 seconds** — the frontend shows skeleton loaders until the cache is ready. Kalshi's cursor-paginated API is typically the bottleneck.
+
 All data is live — no mock mode, no API keys needed. Polymarket streams real-time order book depth via public WebSocket. Kalshi provides real orderbook depth (10-14 levels) via public REST polling — no authentication required.
 
 ## Architecture
