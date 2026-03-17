@@ -187,8 +187,9 @@ To minimize latency to both venue APIs, we spun up EC2 instances in 4 AWS region
 
 **eu-west-1 (Ireland)** wins — best Polymarket latency (7.5ms) with near-best Kalshi latency (3.5ms). Both Kalshi and Polymarket backends appear to be hosted in EU/US-East, making Ireland the optimal midpoint.
 
-<details>
-<summary>Region selection process & live pinging</summary>
+![Region latency results](readme-assets/region.png)
+
+*Latency comparison across regions — eu-west-1 has the best combined TTFB for both venues.*
 
 <video src="readme-assets/region_selection.mp4" controls width="100%"></video>
 
@@ -197,12 +198,6 @@ To minimize latency to both venue APIs, we spun up EC2 instances in 4 AWS region
 <video src="readme-assets/pinging.mp4" controls width="100%"></video>
 
 *Live latency probes running against Polymarket and Kalshi endpoints from each region.*
-
-![Region latency results](readme-assets/region.png)
-
-*Latency comparison across regions — eu-west-1 has the best combined TTFB for both venues.*
-
-</details>
 
 Full probe results with per-region JSON breakdowns are in [`infra/latency-test/results/`](infra/latency-test/results/).
 
