@@ -2,7 +2,10 @@
 
 Real-time order book aggregation and cross-venue quoting for prediction markets, combining liquidity from Polymarket and Kalshi into a single unified view.
 
-<video src="readme-assets/Aggregator.mp4" controls width="100%"></video>
+
+https://github.com/user-attachments/assets/cedd20f0-492e-4430-be4c-661918f526bc
+
+
 
 *Live order book aggregation across Polymarket and Kalshi — combined/per-venue toggle, depth chart, quote panel with cross-venue fill breakdown.*
 
@@ -191,11 +194,14 @@ To minimize latency to both venue APIs, we spun up EC2 instances in 4 AWS region
 
 *Latency comparison across regions — eu-west-1 has the best combined TTFB for both venues.*
 
-<video src="readme-assets/region_selection.mp4" controls width="100%"></video>
+https://github.com/user-attachments/assets/4f150f3a-9390-410d-a508-d4df9f189d64
+
 
 *Spinning up EC2 instances across 4 AWS regions to run latency probes.*
 
-<video src="readme-assets/pinging.mp4" controls width="100%"></video>
+
+https://github.com/user-attachments/assets/e1689ae8-4df8-45ef-8b8e-571b774078e8
+
 
 *Live latency probes running against Polymarket and Kalshi endpoints from each region.*
 
